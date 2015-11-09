@@ -9,8 +9,8 @@ import com.parse.Parse;
 
     public class App extends Application {
 
-        private String ApplicationID = "";
-        private String ClientKey = "";
+        private String ApplicationID = "6kAuQrnZFROire0NRNaSnMoINCl1ogecGv2gTjES";
+        private String ClientKey = "gJlETPndLyDQVQHwKosTjH2XLXe6Intzc1BS6QFM";
 
         @Override
         public void onCreate() {

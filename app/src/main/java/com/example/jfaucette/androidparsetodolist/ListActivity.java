@@ -16,9 +16,13 @@ import android.widget.Toast;
 
 import com.example.jfaucette.androidparsetodolist.model.Task;
 import com.example.jfaucette.androidparsetodolist.model.TasksAdapter;
+import com.parse.FindCallback;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
 
 import java.text.ParseException;
 import java.util.ArrayList;
+import java.util.List;
 
 public class ListActivity extends AppCompatActivity {
 
@@ -61,6 +65,11 @@ public class ListActivity extends AppCompatActivity {
         ParseQuery<ParseObject> query = ParseQuery.getQuery("Task");
 
         query.findInBackground(new FindCallback<ParseObject>() {
+            @Override
+            public void done(List<ParseObject> list, com.parse.ParseException e) {
+
+            }
+
             public void done(List<ParseObject> taskList, ParseException e) {
                 if (e == null) {
                     for (ParseObject tasks : taskList) {

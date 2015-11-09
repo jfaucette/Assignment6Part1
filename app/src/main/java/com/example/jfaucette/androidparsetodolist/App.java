@@ -16,7 +16,6 @@ import com.parse.Parse;
         public void onCreate() {
             super.onCreate();
 
-            //variables stored elsewhere
             Parse.initialize(this, ApplicationID, ClientKey);
         }
     }

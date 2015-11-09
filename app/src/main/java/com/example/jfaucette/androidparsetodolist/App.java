@@ -9,9 +9,14 @@ import com.parse.Parse;
 
     public class App extends Application {
 
-        @Override public void onCreate() {
+        private String ApplicationID = "";
+        private String ClientKey = "";
+
+        @Override
+        public void onCreate() {
             super.onCreate();
 
-            Parse.initialize(this, "6kAuQrnZFROire0NRNaSnMoINCl1ogecGv2gTjES", "gJlETPndLyDQVQHwKosTjH2XLXe6Intzc1BS6QFM"); // Your Application ID and Client Key are defined elsewhere
+            //variables stored elsewhere
+            Parse.initialize(this, ApplicationID, ClientKey);
         }
     }
